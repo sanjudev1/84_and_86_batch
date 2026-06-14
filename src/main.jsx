@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CustomCorousel from './components/customcorosuels.jsx';
 import Counter from './components/counterapp.jsx';
 import Products from './components/products';
+import VoiceButton from '#components/voicebutton';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,5 +15,6 @@ createRoot(document.getElementById('root')).render(
    <CustomCorousel/>
    <Counter/>
    <Products/>
+   <VoiceButton/>
   </StrictMode>
 )
