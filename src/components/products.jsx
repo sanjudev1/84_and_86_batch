@@ -7,6 +7,7 @@ import { useEffect, useState } from "react"
 import { AudioSpinner} from "./customspinner";
 import { NavLink } from "react-router";
 import { useFecth } from "../customhooks/usefetch";
+import FoodCard from "./customcard";
 
 //component must have only single parent
 function Products(){
@@ -18,7 +19,7 @@ function Products(){
 
    <div className="">
      {recipes?
-     <>{recipes.map((e,index)=><NavLink to={`/recipe/${e.id}`}><img  key={index} style={{width:'240px',borderRadius:'5px',marginLeft:'1px'}} src={e.image}/></NavLink>)}</>
+     <div style={{display:'flex',flexWrap:'wrap'}}>{recipes.map((e,index)=> <FoodCard item={e}/>)}</div>
      :<AudioSpinner/>}
    </div>
   

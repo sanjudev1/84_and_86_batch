@@ -20,6 +20,7 @@ function CustomNavbar() {
           >
             <Nav.Link ><NavLink to="/">Home</NavLink></Nav.Link>
             <Nav.Link ><NavLink to="/services">Service</NavLink></Nav.Link>
+            <Nav.Link ><NavLink to="/cart">Cart</NavLink></Nav.Link>
             <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="/category">category</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
